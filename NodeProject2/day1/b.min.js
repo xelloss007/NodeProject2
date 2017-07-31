@@ -1,0 +1,1 @@
+function aa(o,n){console.log("name : "+o);console.log("age : "+n)}
