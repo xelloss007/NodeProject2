@@ -19,14 +19,14 @@
 const fs = require('fs');
 //파일 읽기
 //비동기방식
-//exports.readFile = function(fname, func){
-//	fs.readFile(fname, 'utf-8', func);
-//};
+exports.readFile = function(fname, func){
+	fs.readFile(fname, 'utf-8', func);
+};
 
 //동기방식
-exports.readFileSync = function(fname){
-	return fs.readFile(fname, 'utf-8');
-};
+//exports.readFileSync = function(fname){
+//	return fs.readFile(fname, 'utf-8');
+//};
 
 //파일 쓰기
 //exports.filewrite = function (){
