@@ -52,3 +52,32 @@ exports.myReadDir = function(dir, fn){
 //동기방식
 
 //------------------------------------------------------
+
+//파일쓰기
+exports.myFileWrite = function(){
+	
+}
+fs.writeFile
+
+
+
+
+//------------------------------------------------------
+
+//폴더생성
+
+var newFolder = path.join(__dirname, 'data');
+
+fs.stat(newFolder, function(err, stat){
+	if(err){
+		fs.mkdir(newFolder, 0666, function(err){
+			if(err){
+				console.log('폴더 만들기 실패');
+			}else{
+				console.log('폴더 만들기 성공');
+			}
+		});
+	}else{
+		console.log('이미있음');
+	}
+});
