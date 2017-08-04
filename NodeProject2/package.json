@@ -9,7 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.3",
+    "express-error-handler": "^1.1.0",
+    "multer": "^1.3.0",
     "system-sleep": "^1.3.5",
     "underscore": "^1.8.3"
   }
